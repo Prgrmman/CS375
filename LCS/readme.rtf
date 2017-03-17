@@ -1,0 +1,21 @@
+﻿Name: Jonathan Terner
+Date: 10/20
+Assignment: CS373 Assignment 3 Programming part 2
+
+Files:
+lcs.cpp
+makefile
+readme.rtf
+
+To Run:
+make && ./lcs
+
+Algorithm:
+
+This algorithm is a generalized version of the longest common subsequence for two strings such that it works for three strings. The table of subproblems is now three dimensional instead of a 2d one. It works by dynamically computing the sequence length of each subproblem, using arrows to keep track of how it built each solution. An Arrow is defined as an enumerated type with values LESS_I, LESS_K, DIAG, NONE. Before the algorithm runs, each string must be padded by an extra character such that we can consider substrings of length 0 that are not composed of any characters. The program computes the table using lcs_length(...). Then the program uses findLCS(…) to walk through the table and construct the longest subsequence.
+
+Results:
+125493106771
+
+Note:
+The set of test strings provided in this problem have more than one longest common subsequence, with my code printing out a different (but valid) string from the example solution
