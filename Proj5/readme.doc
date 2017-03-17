@@ -1,0 +1,48 @@
+﻿Name: Jonathan Terner
+Assignment: CS375 Assignment 5 Programming part
+
+Part1:
+
+I implemented the extra credit programming part from question 6. My algorithm uses Dijkstra’s algorithm on the source node a. My version of Dijkstra’s algorithm uses a priority queue for bett As part of Dijkstra’s algorithm, I created a shortest path tree rooted at A. To find the shortest path between any two vertices u and v that passes through A, I construct the path from u to A and combine it with the path from A to v. This way, I only need to run Dijkstra’s algorithm once.
+
+Results:
+“Finding the shortest path between d and i that goes through a
+d, f, j, a, i, 
+Total distance for that path was 42”
+
+To run:
+The name of the main file is citypath.cpp. Running make all will build all of the necessary components.
+After the executable is built, simply run ./citypath input2.txt 
+Otherwise, you can run make run2 for the same results
+
+
+
+
+Part2:
+
+This is my implementation of the assigned programming part found in Part B for the cluster analysis program.
+
+I implemented Kruskals algorithm to find the maximum tree. To create three disjoint subsets, I eliminated all similarities (edges) that were less than 60.
+
+Results:
+“There are 3 groups
+
+Group 1:
+size of group: 5
+p1 p13 p2 p5 p9 
+
+Group 2:
+size of group: 9
+p10 p12 p15 p16 p17 p19 p4 p6 p8 
+
+Group 3:
+size of group: 6
+p11 p14 p18 p20 p3 p7”
+
+To run:
+The name of the main file is cluster.cpp. Running make all will build of the necessary components.
+After the executable is built, simply run ./cluster input1.txt
+Otherwise, you can run make run1 for the same results.
+
+
+

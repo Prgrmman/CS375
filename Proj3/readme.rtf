@@ -1,0 +1,27 @@
+﻿Name: Jonathan Terner
+Date: 10/20/2016
+Class: CS 375
+Assignment: Assignment Three programming part 1
+
+Files:
+makefile
+Matrix.h
+Matrix.cpp
+shortest.cpp
+readme.rtf
+
+Algorithm:
+
+This Code solves the shortest path problem using Floyd’s dynamic algorithm. It also creates a path matrix in order to determine the intermediate nodes that it traverses to produce the path that has the shortest distance. Because only the last matrix configuration is needed, mSy algorithm performs in place.
+
+I created a Matrix class, which dynamically allocates a 2d array of a specified dimension. It also contains mappings of city names to matrix entries for ease of use. The Matrix assumes that the graph is non-directed when it adds edges between its nodes. The Matrix is used to represent the graph as an adjacency matrix.
+
+Results:
+Shortest distance between New York City and Toronto:
+New York City
+Scranton
+Binghamton
+Syracuse
+Rochester
+Buffalo
+Toronto

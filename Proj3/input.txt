@@ -1,0 +1,16 @@
+
+Kingston, Toronto, 180
+Kingston, Montreal, 160
+Montreal, Albany, 130
+Toronto, Buffalo, 100
+Buffalo, Rochester, 60
+Rochester, Syracuse, 70
+Kingston, Syracuse, 65
+Syracuse, Albany, 100
+Albany, New York City, 140
+New York City, Binghamton, 180
+New York City, Scranton, 100
+New York City, Allentown, 70
+Allentown, Scranton, 65
+Scranton, Binghamton, 60
+Binghamton, Syracuse, 70
