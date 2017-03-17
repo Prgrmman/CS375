@@ -8,7 +8,6 @@
 
 **PART A:**
 
-![](media/image1.wmf){width="5.64375in" height="5.847916666666666in"}
 
 **Algorithm:**
 
@@ -27,55 +26,6 @@ time. Breadth first search will give us the distance of each node from
 the source, so to find the minimum number of semesters, we simply need
 to add 1 to the distance of the deepest node from the source.
 
-**Pseudo code:**
-
-int minSemester(int matrix\[SIZE\]\[SIZE\], node nodes\[SIZE\])
-
-finalDistance ← 0
-
-queue ← NULL
-
-for each vertex v with in-degree = 0 do
-
-queue.enqueue(v)
-
-color\[v\] = grey
-
-dist\[v\] = 0
-
-while(queue not empty) do
-
-v ← head(queue)
-
-for u ←0 to SIZE -1 do
-
-if(isEdge(v,u) and color\[u\] = white) then
-
-color\[u\] ← grey
-
-dist\[u\] ← dist\[v\] + 1
-
-finalDistance ← dist\[u\]
-
-queue.enqueue(u)
-
-color\[v\] ← red
-
-queue.dequeue()
-
-return finalDistance + 1
-
-END
-
-**To Run:**
-
-make semest && ./semest
-
-**Results:**
-
-“The minimum number of semesters is 5”
-
-**PART B1:**
 
 **Algorithm:**
 
